@@ -1,0 +1,75 @@
+## 论文：A Survey on Vision Transformer
+
+### 3. NLP中的Transformers
+
+1. RNN
+   - 代表：GRU和LSTM
+   - 加入attention模块可以SOTA方法提点
+   - 受序列的结构限制，加速和并行训练比较困难
+   - 同上，不能处理较长序列模型，不能构建很大的模型
+2. Vaswani et al. 2017
+   - 首次提出Transformer结构，是一种encoder-decoder结构，用于seq-to-seq的NLP任务，例如机器翻译
+   - Encoder内部模块
+     1. MSA：Multi-head Self-Attention
+     2. FFN：Feed-Forward Neural Network
+   - Decoder内部模块
+     - Masked-MSA
+     - FFN
+   - 可以达到RNN的效果
+   - 可以并行训练，因此可以在更大的数据集上训练，产生了很多PTMs(Pre-Trained models)
+3. BERT和其变种
+   - 是用多层transformer的encoder生成的PTMs模型
+   - fine-tune阶段可以加入不同的output layer用于不同的NLP任务
+     - Sequence-level Tasks（eg. 情感分析 Sentiment Analysis）：将first token用于分类
+     - Token-level Tasks（eg. 名称实体识别 Name Entity Recognition）：所有token过softmax后分类
+   - 在11个NLP任务上取得了SOTA结果
+4. GPT和GPT-3
+   - 是另一类PTMs模型，它是基于transformer的decoder来构建的，用了Masked-MSA
+   - GPT需要在不同任务上进行fine-tune，但是GPT-2和GPT-3都不需要fine-tune了（为什么？），后者参数量在1750亿这个量级
+
+### 4. Vision Transformer
+
+1. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
